@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="bottom_margin_between_components">18dp</dimen>
+
+    <dimen name="collapsing_toolbar_height">180dp</dimen>
+
+    <!--Font Sizes questions 14tü , longtext 13tü-->
+    <dimen name="font_size_actionbar_title">17dp</dimen>
+    <dimen name="font_size_questions">18dp</dimen>
+    <dimen name="font_size_question_subtitle">10dp</dimen>
+
+    <dimen name="font_size_number_selector_main">43dp</dimen>
+    <dimen name="font_size_number_selector_subtitle">12dp</dimen>
+
+    <dimen name="font_size_continue_button">21dp</dimen>
+    <dimen name="font_size_edit_text">17dp</dimen>
+    <dimen name="font_size_long_text">17dp</dimen>
+    <dimen name="font_size_checkbox">13dp</dimen>
+
+    <dimen name="thumbnail_width">60dp</dimen>
+    <dimen name="thumbnail_width_messages">38dp</dimen>
+    <dimen name="big_thumbnail_width">88dp</dimen>
+    <dimen name="extra_big_thumbnail_width">130dp</dimen>
+
+    <dimen name="message_comment_horizontal_margin">54dp</dimen>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:type="radial"
+        android:startColor="#A0C92C"
+        android:endColor="#5FAD00"
+        android:centerX="50%"
+        android:centerY="-10%"
+        android:gradientRadius="440%p"
+        android:angle="0"
+        />
+    <padding android:left="7dp"
+        android:top="12dp"
+        android:right="7dp"
+        android:bottom="0dp" />
+    <stroke android:width="0dp"
+        android:color="@android:color/widget_edittext_dark">
+    </stroke>
+    <corners android:radius="6dp"/>
+    <!--<solid android:color="@color/kermit_green"/>-->
+</shape>

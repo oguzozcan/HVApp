@@ -1,0 +1,128 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitish_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.armut.armuthv.fragments.JobDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:clipToPadding="false"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingTop="24dp">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapImageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/extra_big_thumbnail_width"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="-16dp"
+                android:layout_marginRight="-16dp"
+                android:layout_marginTop="-16dp"
+                android:clipToPadding="false"
+                android:visibility="gone"
+                app:cameraZoom="15"
+                app:liteMode="true"
+                app:mapType="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/directionLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/questionTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="14dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/get_direction"
+                    android:textColor="@color/warm_grey2"
+                    android:textSize="13dp" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/getDirectionForCar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/stormy_blue"
+                        android:drawableLeft="@drawable/icn_car"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="@string/with_car"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <Button
+                        android:id="@+id/getDirectionForBusses"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@color/stormy_blue"
+                        android:drawableLeft="@drawable/icn_bus"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="@string/with_bus"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cancelJob"
+            style="@style/RalewayBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/red_button_unselected_shape"
+            android:padding="10dp"
+            android:stateListAnimator="@null"
+            android:text="@string/reject_job"
+            android:textAllCaps="false"
+            android:textColor="@color/alert_color"
+            android:textSize="@dimen/font_size_long_text" />
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

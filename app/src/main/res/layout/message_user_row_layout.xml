@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitish_background"
+    android:gravity="center_vertical"
+    android:minHeight="48dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/thumbnailImage"
+        android:layout_width="@dimen/thumbnail_width_messages"
+        android:layout_height="@dimen/thumbnail_width_messages"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="5dp"
+        app:civ_border_width="1px"
+        app:civ_border_color="@color/gray2"
+        app:civ_border_overlay="true"
+        android:src="@drawable/default_users_7" />
+    <TextView
+        android:id="@+id/commentTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="75dp"
+        android:background="@drawable/chat_bubble_provider_shape"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="@dimen/message_comment_horizontal_margin"
+        android:layout_toRightOf="@+id/thumbnailImage"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="13dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/extra_big_thumbnail_width"
+        android:layout_height="@dimen/extra_big_thumbnail_width"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/thumbnailImage" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapImageView"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/extra_big_thumbnail_width"
+        android:layout_height="@dimen/extra_big_thumbnail_width"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="4dp"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/thumbnailImage"
+        android:visibility="gone"
+        map:liteMode="true"
+        map:mapType="normal"
+        map:cameraZoom="15"/>
+
+    <TextView
+        android:id="@+id/dateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commentTv"
+        android:layout_alignLeft="@+id/commentTv"
+        android:text="@string/day_today"
+        android:textColor="@color/warm_grey2"
+        android:textSize="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp"/>
+</RelativeLayout>

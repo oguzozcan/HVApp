@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitish_background2"
+        android:minHeight="?android:listPreferredItemHeight"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+        <!--android:layout_marginBottom="2dp"
+                -->
+        <ImageView
+            android:id="@+id/notificationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="3dp"
+            android:src="@drawable/icn_notification"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:paddingBottom="2dp"
+            android:text="title"
+            android:textAppearance="@style/RalewayBold"
+            android:textColor="@color/slate_grey"
+            android:textSize="13dp"
+            app:layout_constraintLeft_toRightOf="@+id/notificationIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/hasPictures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:padding="4dp"
+            android:src="@drawable/icn_camera"
+            app:layout_constraintRight_toLeftOf="@+id/phoneAvailableIv"
+            app:layout_constraintTop_toTopOf="@+id/titleTv"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/phoneAvailableIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:src="@drawable/icn_no_phone"
+            app:layout_constraintRight_toLeftOf="@+id/remainingTimeTv"
+            app:layout_constraintTop_toTopOf="@+id/titleTv"
+            />
+
+        <TextView
+            android:id="@+id/urgentJobTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/urgent_shape"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginRight="4dp"
+            android:text="@string/emergency"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="7dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintRight_toLeftOf="@+id/hasPictures"
+            app:layout_constraintTop_toTopOf="@+id/titleTv" />
+
+        <TextView
+            android:id="@+id/privateJobTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/special_shape"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/special"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="7dp"
+            app:layout_constraintRight_toLeftOf="@+id/hasPictures"
+            app:layout_constraintTop_toTopOf="@+id/titleTv" />
+
+        <TextView
+            android:id="@+id/remainingTimeTv"
+            fontPath="fonts/raleway-bold.ttf"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:textAppearance="@style/RalewayBold"
+            android:textColor="@color/black"
+            android:textSize="7dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/titleTv"
+            android:layout_marginTop="2dp"/>
+        <!--android:textColor="@color/date_gray"-->
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:minLines="2"
+            android:padding="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="6dp"
+            android:textColor="@color/slate_grey"
+            android:textSize="12dp"
+            app:layout_constraintLeft_toLeftOf="@+id/titleTv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+
+    </android.support.constraint.ConstraintLayout>
+    <View
+        android:id="@+id/divider"
+        style="@style/Divider1"
+        android:background="@color/list_divider_color"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_height="1dp"
+        android:layout_width="match_parent" />
+</FrameLayout>

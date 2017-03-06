@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitish_background"
+    android:gravity="center_vertical"
+    android:minHeight="48dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/thumbnailImage"
+        android:layout_width="@dimen/thumbnail_width_messages"
+        android:layout_height="@dimen/thumbnail_width_messages"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="5dp"
+        app:civ_border_width="1px"
+        app:civ_border_color="@color/gray2"
+        app:civ_border_overlay="true"
+        android:src="@drawable/default_users_7" />
+
+    <TextView
+        android:id="@+id/commentTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="@dimen/message_comment_horizontal_margin"
+        android:layout_toRightOf="@+id/thumbnailImage"
+        android:visibility="invisible"
+        android:background="@drawable/chat_bubble_provider_shape"
+        android:minWidth="70dp"
+        android:textColor="@color/black"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/extra_big_thumbnail_width"
+        android:layout_height="@dimen/extra_big_thumbnail_width"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="4dp"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/thumbnailImage" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapImageView"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/extra_big_thumbnail_width"
+        android:layout_height="@dimen/extra_big_thumbnail_width"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="4dp"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/thumbnailImage"
+        map:liteMode="true"
+        map:mapType="normal"
+        map:cameraZoom="15"/>
+
+    <TextView
+        android:id="@+id/dateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/commentTv"
+        android:layout_below="@+id/mapImageView"
+        android:textColor="@color/warm_grey2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/day_today"
+        android:textSize="9dp" />
+</RelativeLayout>

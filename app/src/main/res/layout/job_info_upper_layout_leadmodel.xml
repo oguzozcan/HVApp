@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/serviceNameLead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            style="@style/RalewayBold"
+            android:ellipsize="end"
+            android:maxEms="30"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="19dp"/>
+        <!--android:layout_marginTop="?actionBarSize"-->
+
+        <TextView
+            android:id="@+id/urgentJobTvLead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/urgent_shape"
+            android:padding="4dp"
+            android:layout_alignTop="@+id/serviceNameLead"
+            android:baselineAlignBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/emergency"
+            android:visibility="gone"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/privateJobTvLead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/special_shape"
+            android:padding="4dp"
+            android:layout_alignTop="@+id/serviceNameLead"
+            android:baselineAlignBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/special"
+            android:visibility="gone"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/jobDateLead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/serviceNameLead"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/callPreferenceLead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/jobDateLead"
+            android:drawableLeft="@drawable/icn_phone_unavailable"
+            android:drawablePadding="8dp"
+            android:text=""
+            android:textColor="@color/warm_grey2"
+            android:textSize="11dp"/>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/quoteInfoLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/callPreferenceLead"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:paddingRight="30dp"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/leadPrice"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="start|center_horizontal"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:text=""-->
+                <!--android:textColor="@color/white"-->
+                <!--style="@style/RalewayBold"-->
+                <!--android:textSize="12dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/remainingTime"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="end|center_horizontal"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:text=" 2 GUN 23 SA(default text)"-->
+                <!--android:textColor="@color/white"-->
+                <!--style="@style/RalewayBold"-->
+                <!--android:textSize="12dp"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/receivedQuoteNumber"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_below="@+id/quoteInfoLayout"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:text="3 teklif alındı"-->
+            <!--android:textColor="@color/warm_grey2"-->
+            <!--android:textSize="11dp"/>-->
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:contentDescription=""
+            android:src="@drawable/gray_color_gradient"  />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileThumbnail"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="6dp"
+                android:layout_marginTop="7dp"
+                android:textSize="16dp"
+                style="@style/RalewayBold"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileThumbnail"
+                android:layout_width="@dimen/big_thumbnail_width"
+                android:layout_height="@dimen/big_thumbnail_width"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_overlay="true"
+                android:contentDescription="Profil Fotosu"
+                android:src="@drawable/default_users_7" />
+
+            <ImageView
+                android:id="@+id/badgeIconTop"
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+                android:layout_alignBottom="@id/profileThumbnail"
+                android:layout_alignRight="@id/profileThumbnail"
+                android:layout_marginTop="-10dp"
+                android:contentDescription="Rütbe"
+                android:visibility="gone"
+                android:background="@drawable/trustbadge_15fps_top"/>
+
+            <ImageView
+                android:id="@+id/badgeIcon"
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+                android:layout_below="@id/badgeIconTop"
+                android:layout_alignRight="@id/profileThumbnail"
+                android:visibility="gone"
+                android:contentDescription="Rütbe" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileName"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ratingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="(12)"
+                    style="@style/RalewayBold"
+                    android:textColor="@color/white" />
+
+                <include layout="@layout/review_stars_layout"/>
+
+                <TextView
+                    android:id="@+id/profileRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="4.1"
+                    style="@style/RalewayBold"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

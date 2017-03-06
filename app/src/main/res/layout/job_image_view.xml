@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="7dp">
+
+    <RelativeLayout
+        android:id="@+id/jobImageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/job_image_background_shape"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+
+        <ImageView
+            android:id="@+id/jobImage"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:adjustViewBounds="true"
+            android:foregroundGravity="center"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+    <!--        android:scaleType="fitXY"         -->
+    <ImageView
+        android:id="@+id/deleteJobImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/jobImageLayout"
+        android:layout_marginRight="-14dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="6dp"
+        android:src="@drawable/icn_removepicture" />
+
+</RelativeLayout>

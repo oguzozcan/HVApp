@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="afterDescendants"
+    android:layout_height="match_parent" >
+
+    <com.armut.armuthv.components.TouchImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/select_quote_shape"
+        android:textColor="@color/white"
+        android:text="@string/close" />
+
+</RelativeLayout>

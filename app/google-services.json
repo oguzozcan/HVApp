@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "922714151527",
+    "firebase_url": "https://armut-hv-android.firebaseio.com",
+    "project_id": "armut---hv---android",
+    "storage_bucket": "armut---hv---android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922714151527:android:ef2e4532098da866",
+        "android_client_info": {
+          "package_name": "com.armut.armuthv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922714151527-bddihq021k3oq0iu2fhrl945lj7k7srh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.armut.armuthv",
+            "certificate_hash": "E873A0E5D3B5673119D68B5804EAFD5ABF7009C0"
+          }
+        },
+        {
+          "client_id": "922714151527-d1vcos68scuhukoujsgcc6ccpbq1qmug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuNV_Oe5-vZSiAulPNfFoJtfbB0_slaBg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922714151527-d1vcos68scuhukoujsgcc6ccpbq1qmug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

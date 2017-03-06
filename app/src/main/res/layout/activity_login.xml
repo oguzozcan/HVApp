@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.armut.armuthv.LoginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gray_color_drawable"
+        android:layout_centerInParent="true">
+        <!--android:layout_below="@id/Toolbar"     android:paddingTop="?android:attr/actionBarSize"           android:paddingTop="3dp" -->
+        <!--android:layout_below="@+id/toolbar"-->
+    </FrameLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:minHeight="?android:attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/AppTheme.NoActionBar">
+        <!--app:popupTheme="@style/AppTheme">-->
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            style="@style/RalewayBold"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

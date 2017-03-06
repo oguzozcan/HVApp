@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/warm_grey2" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/projectsTab"
+                style="@style/RalewayBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/tab_selector_projects"
+                android:gravity="center"
+                android:onClick="onRadioButtonClicked"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/tab1_projects"
+                android:textColor="@drawable/tab_text_color_selector_green"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/calendarTab"
+                style="@style/RalewayBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/tab_selector_calendar"
+                android:gravity="center"
+                android:onClick="onRadioButtonClicked"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/tab2_calendar"
+                android:textColor="@drawable/tab_text_color_selector_green"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/profileTab"
+                style="@style/RalewayBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/tab_selector_profile"
+                android:gravity="center"
+                android:onClick="onRadioButtonClicked"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/tab3_profile"
+                android:textColor="@drawable/tab_text_color_selector_green"
+                android:textSize="14dp" />
+
+        </RadioGroup>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. Theme.AppCompat.Light.NoActionBar-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="windowActionBar">false</item>-->
+        <item name="contentInsetStart">0dp</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowActionBar">false</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/calendar_weekday</item>
+        <item name="android:textColorSecondary">@color/white</item>
+
+        <item name="android:textCursorDrawable">@drawable/black_cursor</item>
+    </style>
+
+    <style name="AppTheme.Test" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/kermit_green</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textCursorDrawable">@drawable/black_cursor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomTabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:divider">@drawable/tab_divider</item>
+        <item name="android:dividerPadding">0dp</item>
+        <item name="tabIndicatorColor">@color/avocado</item>
+        <item name="tabTextAppearance">@style/CustomTabTexStyle</item>
+
+    </style>
+
+    <style name="Divider1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="CustomTabTexStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/warm_grey2</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="RalewayBold" parent="android:TextAppearance">
+        <item name="fontPath">fonts/raleway-bold.ttf</item>
+    </style>
+
+    <style name="RalewayLight" parent="android:TextAppearance">
+        <item name="fontPath">fonts/raleway-light.ttf</item>
+    </style>
+
+</resources>

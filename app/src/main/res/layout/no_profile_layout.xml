@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/mainNoProfileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/whitish_background">
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="3dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:background="@drawable/toolbar_dropshadow" />-->
+
+        <RelativeLayout
+            android:id="@+id/noProfileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whitish_background">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                android:alpha="0.2"
+                android:background="@drawable/services_white_tiled_background" />
+
+            <ImageView
+                android:id="@+id/noNewProfileIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="6dp"
+                android:src="@drawable/no_profile_icon" />
+            <!--                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="142dp"-->
+            <TextView
+                android:id="@+id/noProfileTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/profile_screen"
+                style="@style/RalewayBold"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/noProfileSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noProfileTitle"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="@string/profile_login_advice"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="54dp"
+                android:minHeight="40dp"
+                android:layout_above="@+id/signUp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/login_button_shape"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="@string/login"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                style="@style/RalewayBold"
+                android:textSize="@dimen/font_size_actionbar_title" />
+
+            <Button
+                android:id="@+id/signUp"
+                style="@style/Base.TextAppearance.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="6dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:text="@string/sign_up_link"
+                android:textAllCaps="false"
+                android:textColor="@color/kermit_green"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

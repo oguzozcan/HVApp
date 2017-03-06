@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StrokeCircleButton">
+        <attr name="scb_color" format="color" />
+        <attr name="scb_pressedRingWidth" format="dimension" />
+        <attr name="scb_pressedRingAlpha" format="integer" />
+        <attr name="scb_colorStyle" format="enum">
+            <enum name="stroke" value="0" />
+            <enum name="fill" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NumberSelector">
+        <attr name="unit" format="string"/>
+        <attr name="question" format="string"/>
+        <attr name="selected_color" format="color" />
+        <attr name="unselected_color" format="color" />
+        <attr name="predefined_values" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="DropdownSpinnerWithPopup">
+        <attr name="isDatePicker" format="boolean"/>
+        <attr name="isTimePicker" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="AdditionalInfoEditText">
+        <attr name="typeNumber" format="boolean" />
+        <attr name="longText" format="boolean" />
+        <attr name="questionText" format="string" />
+        <attr name="hintText" format="string" />
+        <attr name="isRequired" format="boolean" />
+    </declare-styleable>
+</resources>

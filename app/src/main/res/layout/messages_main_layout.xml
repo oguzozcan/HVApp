@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitish_background"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_collapseMode="pin">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/whitish_background"
+        android:descendantFocusability="beforeDescendants"
+        android:divider="@color/white"
+        android:dividerHeight="0dp"
+        android:fadeScrollbars="true"
+        android:fillViewport="true"
+        android:listSelector="#00FAFAFA"
+        android:minHeight="120dp"
+        android:overScrollMode="always"
+        android:paddingBottom="60dp"
+        android:stackFromBottom="false"
+        android:transcriptMode="normal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_collapseMode="pin" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-185dp">
+
+        <include layout="@layout/progressbar_layout_white_background"></include>
+    </RelativeLayout>
+
+
+</RelativeLayout>

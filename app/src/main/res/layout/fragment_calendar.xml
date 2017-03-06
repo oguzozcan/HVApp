@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calendarRowBackground"
+    tools:context="com.armut.armuthv.fragments.CalendarFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/calendarList"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="54dp"
+        android:name="com.armut.armuthv.objects.UserCalendarItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/calendar_row" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="?actionBarSize"
+        android:paddingTop="?android:attr/actionBarSize">
+        <include layout="@layout/no_profile_layout"/>
+    </RelativeLayout>
+
+
+
+    <include layout="@layout/loading_layout"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reviewToggleLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:descendantFocusability="afterDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/reviewToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:button="@drawable/toggle_switch_orange"
+        android:checked="false"
+        android:clickable="true"
+        android:focusable="false"
+        android:textOff="off"
+        android:textOn="on" />
+
+    <TextView
+        android:id="@+id/reviewToggleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/rate_armut_second_never_ask_again"
+        android:textColor="@color/warm_grey"
+        android:textSize="@dimen/font_size_checkbox" />
+</LinearLayout>

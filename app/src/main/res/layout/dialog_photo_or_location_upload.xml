@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitish_background"
+    android:layout_margin="20dp">
+    <Button
+        android:id="@+id/selection1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:text="@string/shoot_photo_for_attachment"
+        android:layout_gravity="start"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="6dp"/>
+    <Button
+        android:id="@+id/selection2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:text="@string/select_photo_from_gallery"
+        android:layout_gravity="start"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"/>
+    <Button
+        android:id="@+id/selection3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:text="@string/send_my_current_location"
+        android:layout_gravity="start"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

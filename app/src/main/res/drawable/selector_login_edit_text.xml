@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="true"
+        android:drawable="@drawable/big_text_area_selected_shape" />
+    <item
+        android:drawable="@drawable/big_text_area_login_unselected_shape" />
+</selector>
